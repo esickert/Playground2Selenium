@@ -8,7 +8,9 @@ public class SeleniumTest {  //class declaration
 	public static void main(String[] args) {  //start of the main method
 		// TODO Auto-generated method stub
 		
-		WebDriver driver = new FirefoxDriver(); // 
+		WebDriver driver = new FirefoxDriver(); // concept implementation is done 
+												// in 2 classes: RemoteWebDriver and 
+												// HtmlUnitDriver
 		
 		MoreSeleniumTestClass stuff = new MoreSeleniumTestClass(); 
 		
