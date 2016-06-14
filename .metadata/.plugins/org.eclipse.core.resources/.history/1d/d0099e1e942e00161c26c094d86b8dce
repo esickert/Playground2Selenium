@@ -1,0 +1,10 @@
+package seleniumTestPackage;
+
+public class MoreSeleniumTestClass	{
+	public static void main(String[] args)	{
+	
+	public static void Sleep()	{
+	
+		Thread.sleep(5000);
+	
+	}

@@ -1,0 +1,16 @@
+package seleniumTestPackage;
+
+public class MoreSeleniumTestClass	{
+	
+	public void Sleep()	{
+		try {
+			Thread.sleep(5000);
+		} 
+		catch (InterruptedException e)	{
+			System.err.println("ERROR");
+		}
+	}
+}			
+
+
+
