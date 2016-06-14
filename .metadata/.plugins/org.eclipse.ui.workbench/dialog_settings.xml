@@ -26,7 +26,7 @@
 	<section name="ShowViewDialog">
 		<item value="280" key="DIALOG_WIDTH"/>
 		<item value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
-		<item value="org.eclipse.egit.ui.RepositoriesView" key="ShowViewDialog.STORE_SELECTED_VIEW_ID"/>
+		<item value="org.eclipse.egit.ui.StagingView" key="ShowViewDialog.STORE_SELECTED_VIEW_ID"/>
 		<item value="414" key="DIALOG_HEIGHT"/>
 		<item value="487" key="DIALOG_X_ORIGIN"/>
 		<item value="69" key="DIALOG_Y_ORIGIN"/>
