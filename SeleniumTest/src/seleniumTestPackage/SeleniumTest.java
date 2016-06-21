@@ -22,3 +22,4 @@ public class SeleniumTest {  				  //class declaration
 	}
 
 }
+//cloned from Github
