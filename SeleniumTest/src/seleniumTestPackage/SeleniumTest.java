@@ -22,4 +22,4 @@ public class SeleniumTest {  				  //class declaration
 	}
 
 }
-//cloned from Github
+//cloned from Github. Coding is now in moreSeleniumCode branch
