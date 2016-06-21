@@ -12,11 +12,14 @@ public class SeleniumTest {  				  //class declaration
 												// in 2 classes: RemoteWebDriver and 
 												// HtmlUnitDriver. Firefox driver is a 
 												// subclass of RemoteWebDriverClass.
-		
 		MoreSeleniumTestClass stuff = new MoreSeleniumTestClass(); 
 		
 		driver.get("http://www.bing.com");
 		stuff.Sleep(5);
+		stuff.setWindowSize(driver);
+		stuff.Sleep(5);
+		
+		
 		driver.quit();
 
 	}
