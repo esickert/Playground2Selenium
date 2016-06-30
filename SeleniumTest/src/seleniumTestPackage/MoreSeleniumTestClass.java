@@ -14,8 +14,9 @@ public class MoreSeleniumTestClass	{
 				System.err.println("ERROR");
 			}
 			System.out.print(i + " ");
-			System.out.println();
+//			System.out.println();
 		}
+	System.out.println();
 	}
 	
 	public void setWindowSize(WebDriver stuff)	{
