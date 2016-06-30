@@ -1,6 +1,7 @@
 package seleniumTestPackage;
 
 import org.openqa.selenium.firefox.*; // import necessary Webdriver classes
+import org.openqa.selenium.*;
 import org.openqa.selenium.WebDriver; // import necessary Webdriver classes
 
 public class MoreSeleniumTestClass	{
@@ -21,7 +22,12 @@ public class MoreSeleniumTestClass	{
 	
 	public void setWindowSize(WebDriver stuff)	{
 		stuff.manage().window().maximize();
-		
+	}
+	
+	public void resizeWindow(WebDriver stuff)	{
+		Dimension size = new Dimension(900,600);	
+		stuff.manage().window().setSize(size);
+		System.out.println("Resized window");
 	}
 }			
 

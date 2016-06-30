@@ -18,6 +18,7 @@ public class SeleniumTest {  				  //class declaration
 		stuff.Sleep(5);
 		stuff.setWindowSize(driver);
 		stuff.Sleep(5);
+		stuff.resizeWindow(driver);
 		
 		
 		driver.quit();
