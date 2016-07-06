@@ -17,7 +17,7 @@ public class SeleniumTest {  				 //class declaration
 												// subclass of RemoteWebDriverClass.
 		MoreSeleniumTestClass stuff = new MoreSeleniumTestClass(); 
 		
-		driver.get("http://www.yahoo.com");
+		driver.get("http://duckduckgo.com");
 		stuff.Sleep(5);
 		stuff.setWindowSize(driver);
 		stuff.Sleep(5);
@@ -25,9 +25,10 @@ public class SeleniumTest {  				 //class declaration
 		stuff.Sleep(10);
 //****************************************************************************************
 //		see page 20 - 24 in book		
-//		WebElement searchBox = driver.findElement(By.name("q")); //WebElement class needs to be imported ... see above
+//		WebElement searchBox = driver.findElement(By.name("q")); //WebElement class needs to be imported ... see above. (google searchbox)
 //		WebElement searchBox = driver.findElement(By.id("uh-search-box")); //finding WebElement by id, yahoo search box using firebug
-		WebElement searchBox = driver.findElement(By.name("p")); //finding WebElement by name, yahoo search box (using firebug)
+//		WebElement searchBox = driver.findElement(By.name("p")); //finding WebElement by name, yahoo search box (using firebug using yahoo)
+		WebElement searchBox = driver.findElement(By.className("js-search-input")); //finding WebElement by className(using firefox on DuckDuckGo) 
 		searchBox.sendKeys("Microsoft");
 		stuff.Sleep(10);
 		searchBox.submit();
