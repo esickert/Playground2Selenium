@@ -23,7 +23,8 @@ public class SeleniumTest {  				 //class declaration
 		stuff.Sleep(5);
 		stuff.resizeWindow(driver);
 		stuff.Sleep(10);
-		
+
+//		see page 20 - 24 in book		
 //		WebElement searchBox = driver.findElement(By.name("q")); //WebElement class needs to be imported ... see above
 //		WebElement searchBox = driver.findElement(By.id("uh-search-box")); //finding WebElement by id, yahoo search box using firebug
 		WebElement searchBox = driver.findElement(By.name("p")); //finding WebElement by name, yahoo search box (using firebug)
