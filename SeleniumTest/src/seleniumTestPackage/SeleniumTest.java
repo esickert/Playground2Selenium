@@ -20,7 +20,8 @@ public class SeleniumTest {  				 //class declaration
 		List<WebDriver> driver2 = new ArrayList<WebDriver>(); //not sure syntax is correct!!
 		MoreSeleniumTestClass stuff = new MoreSeleniumTestClass(); 
 		
-		driver.get("http://www.duckduckgo.com");
+//		driver.get("http://www.duckduckgo.com");
+		driver.navigate().to("http://www.yahoo.com");
 		stuff.Sleep(5);
 //		stuff.setWindowSize(driver);
 		stuff.Sleep(5);
@@ -30,8 +31,8 @@ public class SeleniumTest {  				 //class declaration
 //		see page 20 - 24 in book		
 //		WebElement searchBox = driver.findElement(By.name("q")); //WebElement class needs to be imported ... see above. (google searchbox)
 //		WebElement searchBox = driver.findElement(By.id("uh-search-box")); //finding WebElement by id, yahoo search box using firebug
-//		WebElement searchBox = driver.findElement(By.name("p")); //finding WebElement by name, yahoo search box (using firebug using yahoo)
-		WebElement searchBox = driver.findElement(By.className("js-search-input")); //finding WebElement by className(using firefox on DuckDuckGo) 
+		WebElement searchBox = driver.findElement(By.name("p")); //finding WebElement by name, yahoo search box (using firebug using yahoo)
+//		WebElement searchBox = driver.findElement(By.className("js-search-input")); //finding WebElement by className(using firefox on DuckDuckGo) 
 //		WebElement searchBox = driver2.findElements(By.className("js-search-input")); //don't know what's wrong here!!!!!!
 		
 		searchBox.sendKeys("Microsoft");
