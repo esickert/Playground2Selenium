@@ -1,5 +1,7 @@
 package seleniumTestPackage; 		         //name of the package in which class files are stored
 
+import java.util.*;
+
 import org.openqa.selenium.firefox.*;        // import necessary Webdriver classes
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;        // import necessary Webdriver classes
@@ -15,6 +17,7 @@ public class SeleniumTest {  				 //class declaration
 												// in 2 classes: RemoteWebDriver and 
 												// HtmlUnitDriver. Firefox driver is a 
 												// subclass of RemoteWebDriverClass.
+		List<WebDriver> driver2 = new ArrayList<WebDriver>(); //not sure syntax is correct!!
 		MoreSeleniumTestClass stuff = new MoreSeleniumTestClass(); 
 		
 		driver.get("http://www.duckduckgo.com");
@@ -29,6 +32,7 @@ public class SeleniumTest {  				 //class declaration
 //		WebElement searchBox = driver.findElement(By.id("uh-search-box")); //finding WebElement by id, yahoo search box using firebug
 //		WebElement searchBox = driver.findElement(By.name("p")); //finding WebElement by name, yahoo search box (using firebug using yahoo)
 		WebElement searchBox = driver.findElement(By.className("js-search-input")); //finding WebElement by className(using firefox on DuckDuckGo) 
+//		WebElement searchBox = driver2.findElements(By.className("js-search-input")); //don't know what's wrong here!!!!!!
 		
 		searchBox.sendKeys("Microsoft");
 		stuff.Sleep(10);
