@@ -37,6 +37,9 @@ public class SeleniumTest {  				 //class declaration
 //		WebElement searchBox = driver.findElement(By.className("js-search-input")); //finding WebElement by className(using firefox on DuckDuckGo) 
 //		WebElement searchBox = driver.findElements(By.className("js-search-input")); //don't know what's wrong here!!!!!!
 		
+		List<WebElement> buttons = driver.findElements(By.tagName("button"));
+		System.out.println("The buttons List size is: " + buttons.size());
+		
 		searchBox.sendKeys("Microsoft");
 		stuff.Sleep(5);
 //		searchBox = driver.findElement(By.name("btnk"));  //trying to locate "Google Search" button on Google page
