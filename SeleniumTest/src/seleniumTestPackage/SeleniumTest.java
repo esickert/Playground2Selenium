@@ -39,7 +39,10 @@ public class SeleniumTest {  				 //class declaration
 		
 		List<WebElement> buttons = driver.findElements(By.tagName("button"));
 		System.out.println("The buttons List size is: " + buttons.size());
-		
+		for (int i = 0; i <= buttons.size()-1; i++) {
+			System.out.println(buttons.get(i));
+		}
+				
 		searchBox.sendKeys("Microsoft");
 		stuff.Sleep(5);
 //		searchBox = driver.findElement(By.name("btnk"));  //trying to locate "Google Search" button on Google page
@@ -52,4 +55,4 @@ public class SeleniumTest {  				 //class declaration
 	}
 
 }
-//cloned from Github. Coding is now in moreSeleniumCode branch
+//cloned from Github. Coding is now in moreSeleniumCode branch... branch moreSeleniumCode merged with master
