@@ -38,10 +38,10 @@ public class SeleniumTest {  				 //class declaration
 //		WebElement searchBox = driver.findElements(By.className("js-search-input")); //don't know what's wrong here!!!!!!
 		
 		searchBox.sendKeys("Microsoft");
-		stuff.Sleep(10);
+		stuff.Sleep(5);
 //		searchBox = driver.findElement(By.name("btnk"));  //trying to locate "Google Search" button on Google page
 		searchBox.submit();
-		stuff.Sleep(10);
+		stuff.Sleep(5);
 		
 		
 		driver.quit();
