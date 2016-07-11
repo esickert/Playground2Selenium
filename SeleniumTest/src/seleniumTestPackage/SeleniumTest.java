@@ -17,7 +17,7 @@ public class SeleniumTest {  				 //class declaration
 												// in 2 classes: RemoteWebDriver and 
 												// HtmlUnitDriver. Firefox driver is a 
 												// subclass of RemoteWebDriverClass.
-		List<WebDriver> driver2 = new ArrayList<WebDriver>(); //not sure syntax is correct!!
+//		List<WebDriver> driver2 = new ArrayList<WebDriver>(); //not sure syntax is correct!!
 		MoreSeleniumTestClass stuff = new MoreSeleniumTestClass(); 
 		
 //		driver.get("http://www.duckduckgo.com");
@@ -27,7 +27,7 @@ public class SeleniumTest {  				 //class declaration
 //		stuff.setWindowSize(driver);
 		stuff.Sleep(5);
 //		stuff.resizeWindow(driver);
-		stuff.Sleep(10);
+		stuff.Sleep(5);
 //****************************************************************************************
 //		see page 20 - 24 in book		
 //		WebElement searchBox = driver.findElement(By.name("q")); //WebElement class needs to be imported ... see above. (google searchbox)
@@ -38,10 +38,10 @@ public class SeleniumTest {  				 //class declaration
 //		WebElement searchBox = driver.findElements(By.className("js-search-input")); //don't know what's wrong here!!!!!!
 		
 //****************************************************************************************		
-		List<WebElement> buttons = driver.findElements(By.tagName("button"));
-		System.out.println("The buttons List size is: " + buttons.size());
-		for (int i = 0; i <= buttons.size()-1; i++) {
-			System.out.println(buttons.get(i));
+		List<WebElement> input = driver.findElements(By.tagName("input"));
+		System.out.println("The buttons List size is: " + input.size());
+		for (int i = 0; i <= input.size()-1; i++) {
+			System.out.println(input.get(i));
 		}
 				
 		searchBox.sendKeys("Microsoft");
