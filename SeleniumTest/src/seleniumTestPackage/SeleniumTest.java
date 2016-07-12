@@ -39,7 +39,7 @@ public class SeleniumTest {  				 //class declaration
 		
 //****************************************************************************************		
 		List<WebElement> input = driver.findElements(By.tagName("input"));
-		System.out.println("The buttons List size is: " + input.size());
+		System.out.println("The inputs List size is: " + input.size());
 		for (int i = 0; i <= input.size()-1; i++) {
 			System.out.println(input.get(i));
 		}
