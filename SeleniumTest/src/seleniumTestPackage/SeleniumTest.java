@@ -44,7 +44,7 @@ public class SeleniumTest {  				 //class declaration
 			System.out.println(input.get(i));
 		}
 				
-		searchBox.sendKeys("Microsoft");
+		searchBox.sendKeys("Bing");
 		stuff.Sleep(5);
 //		searchBox = driver.findElement(By.name("btnk"));  //trying to locate "Google Search" button on Google page
 		searchBox.submit();
