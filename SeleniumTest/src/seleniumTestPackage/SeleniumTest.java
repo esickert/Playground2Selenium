@@ -13,7 +13,7 @@ public class SeleniumTest {  				 //class declaration
 		// TODO Auto-generated method stub
 		
 		
-		WebDriver driver = new FirefoxDriver(); // implementation is done 
+		WebDriver samantha = new FirefoxDriver(); // implementation is done 
 												// in 2 classes: RemoteWebDriver and 
 												// HtmlUnitDriver. Firefox driver is a 
 												// subclass of RemoteWebDriverClass.
@@ -22,7 +22,7 @@ public class SeleniumTest {  				 //class declaration
 		
 //		driver.get("http://www.duckduckgo.com");
 //		driver.navigate().to("http://www.yahoo.com");// <Webdriver Instance>.navigate().to("www. ... .com")
-		driver.get("http://www.google.com");
+		samantha.get("http://www.google.com");
 		stuff.Sleep(5);
 //		stuff.setWindowSize(driver);
 		stuff.Sleep(5);
@@ -31,14 +31,14 @@ public class SeleniumTest {  				 //class declaration
 //****************************************************************************************
 //		see page 20 - 24 in book		
 //		WebElement searchBox = driver.findElement(By.name("q")); //WebElement class needs to be imported ... see above. (google searchbox)
-		WebElement searchBox = driver.findElement(By.id("lst-ib")); //By.id method to find Google search box Used crome
+		WebElement searchBox = samantha.findElement(By.id("lst-ib")); //By.id method to find Google search box Used chrome
 //		WebElement searchBox = driver.findElement(By.id("uh-search-box")); //finding WebElement by id, yahoo search box using firebug
 //		WebElement searchBox = driver.findElement(By.name("p")); //finding WebElement by name, yahoo search box (using firebug using yahoo)
 //		WebElement searchBox = driver.findElement(By.className("js-search-input")); //finding WebElement by className(using firefox on DuckDuckGo) 
 //		WebElement searchBox = driver.findElements(By.className("js-search-input")); //don't know what's wrong here!!!!!!
 		
 //****************************************************************************************		
-		List<WebElement> input = driver.findElements(By.tagName("input"));
+		List<WebElement> input = samantha.findElements(By.tagName("input"));
 		System.out.println("The inputs List size is: " + input.size());
 		for (int i = 0; i <= input.size()-1; i++) {
 			System.out.println(input.get(i));
@@ -51,7 +51,7 @@ public class SeleniumTest {  				 //class declaration
 		stuff.Sleep(5);
 		
 		
-		driver.quit();
+		samantha.quit();
 
 	}
 
