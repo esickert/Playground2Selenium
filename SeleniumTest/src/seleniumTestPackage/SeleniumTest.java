@@ -6,6 +6,7 @@ import org.openqa.selenium.firefox.*;        // import necessary Webdriver class
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;        // import necessary Webdriver classes
 import org.openqa.selenium.WebElement;       // need to import WebElement class to use it...see below.
+//import org.openqa.selenium.Keys;
 
 public class SeleniumTest {  				 //class declaration
 
@@ -45,10 +46,14 @@ public class SeleniumTest {  				 //class declaration
 		}
 				
 		searchBox.sendKeys("Bing");
+		//******************************************************************************************************
 		stuff.Sleep(5);
 //		searchBox = driver.findElement(By.name("btnk"));  //trying to locate "Google Search" button on Google page
+//		samantha.findElement(By.className("r")).click();                                      //this DOESN'T WORK!!
+
+
 		searchBox.submit();
-		stuff.Sleep(5);
+//		stuff.Sleep(5);
 		
 		
 		samantha.quit();
