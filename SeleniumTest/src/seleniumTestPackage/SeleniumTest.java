@@ -53,14 +53,12 @@ public class SeleniumTest {  				 //class declaration
 		//******************************************************************************************************
 		stuff.Sleep(5);
 //		searchBox = samantha.findElement(By.className("l"));  //trying to locate "Google Search" button on Google page
-//		samantha.findElement(By.className("r")).click();                                      //this DOESN'T WORK!!
+		samantha.findElement(By.className("r")).click();                                      //this DOESN'T WORK!!
 //		stuff.Sleep(5);
 
 		searchBox.submit();
 //		stuff.Sleep(5);
-		samantha.get("www.bing.com");  //this is a hack!!!!!
 		stuff.Sleep(5);
-		
 		
 		samantha.quit();
 
