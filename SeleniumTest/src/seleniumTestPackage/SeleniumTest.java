@@ -58,7 +58,7 @@ public class SeleniumTest {  				 //class declaration
 
 		searchBox.submit();
 //		stuff.Sleep(5);
-		samantha.get("www.bing.com");   /this is a hack!!!!!
+		samantha.get("www.bing.com");  //this is a hack!!!!!
 		stuff.Sleep(5);
 		
 		
