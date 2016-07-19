@@ -19,6 +19,7 @@ public class SeleniumTest {  				 //class declaration
 												// HtmlUnitDriver. Firefox driver is a 
 												// subclass of RemoteWebDriverClass.
 //		List<WebDriver> driver2 = new ArrayList<WebDriver>(); //not sure syntax is correct!!
+		FindElementByID samatha = new FindElementByID();
 		MoreSeleniumTestClass stuff = new MoreSeleniumTestClass(); 
 		
 //		driver.get("http://www.duckduckgo.com");
