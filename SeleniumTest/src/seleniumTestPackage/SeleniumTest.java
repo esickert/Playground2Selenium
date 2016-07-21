@@ -19,12 +19,13 @@ public class SeleniumTest {  				 //class declaration
 												// HtmlUnitDriver. Firefox driver is a 
 												// subclass of RemoteWebDriverClass.
 //		List<WebDriver> driver2 = new ArrayList<WebDriver>(); //not sure syntax is correct!!
-		FindElementByID samatha = new FindElementByID();
-		MoreSeleniumTestClass stuff = new MoreSeleniumTestClass(); 
+		FindElementByID cathy = new FindElementByID();
+		MoreSeleniumTestClass stuff = new MoreSeleniumTestClass();
 		
+		cathy.openWebsite();
 //		driver.get("http://www.duckduckgo.com");
 //		driver.navigate().to("http://www.yahoo.com");// <Webdriver Instance>.navigate().to("www. ... .com")
-		samantha.get("http://www.google.com");
+//		samantha.get("http://www.google.com");
 //		stuff.Sleep(5);
 //		stuff.setWindowSize(driver);
 //		stuff.Sleep(5);
@@ -42,25 +43,25 @@ public class SeleniumTest {  				 //class declaration
 //		**********************************************************************************
 //	Locating the same element by different mechanisms. (same web element- google search box) 
 //		WebElement searchBox = samantha.findElement(By.name("q"));
-		WebElement searchBox = samantha.findElement(By.className("gsfi"));
+//		WebElement searchBox = samantha.findElement(By.className("gsfi"));
 //****************************************************************************************		
 /**		List<WebElement> input = samantha.findElements(By.tagName("input"));
 		System.out.println("The inputs List size is: " + input.size());
 		for (int i = 0; i <= input.size()-1; i++) {
 			System.out.println(input.get(i));
 		} **/
-		stuff.Sleep(5);
-		searchBox.sendKeys("Bing");
+//		stuff.Sleep(5);
+//		searchBox.sendKeys("Bing");
 		//******************************************************************************************************
-		stuff.Sleep(5);
+//		stuff.Sleep(5);
 //		searchBox = samantha.findElement(By.className("l"));  //trying to locate "Google Search" button on Google page
 //		stuff.Sleep(5);
-		searchBox.submit();
-		stuff.Sleep(5);
-		samantha.navigate().to("https://www.bing.com");
-		stuff.Sleep(5);
+//		searchBox.submit();
+//		stuff.Sleep(5);
+//		samantha.navigate().to("https://www.bing.com");
+//		stuff.Sleep(5);
 		
-		samantha.quit();
+//		samantha.quit();
 
 	}
 
