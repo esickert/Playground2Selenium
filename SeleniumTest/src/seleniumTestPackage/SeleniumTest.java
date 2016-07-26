@@ -14,15 +14,17 @@ public class SeleniumTest {  				 //class declaration
 		// TODO Auto-generated method stub
 		
 		
-		WebDriver samantha = new FirefoxDriver(); // implementation is done 
+//		WebDriver samantha = new FirefoxDriver(); // implementation is done 
 												// in 2 classes: RemoteWebDriver and 
 												// HtmlUnitDriver. Firefox driver is a 
 												// subclass of RemoteWebDriverClass.
 //		List<WebDriver> driver2 = new ArrayList<WebDriver>(); //not sure syntax is correct!!
 		FindElementByID cathy = new FindElementByID();
-		MoreSeleniumTestClass stuff = new MoreSeleniumTestClass();
+		FindElementByTagName beth = new FindElementByTagName();
+//		MoreSeleniumTestClass stuff = new MoreSeleniumTestClass();
 		
 		cathy.openWebsite();
+//		beth.findByTagName(); //this doesn't work!!!!!!!!!!!!!!!!!!!!!!!!
 //		driver.get("http://www.duckduckgo.com");
 //		driver.navigate().to("http://www.yahoo.com");// <Webdriver Instance>.navigate().to("www. ... .com")
 //		samantha.get("http://www.google.com");
@@ -66,4 +68,3 @@ public class SeleniumTest {  				 //class declaration
 	}
 
 }
-//cloned from Github. Coding is now in moreSeleniumCode branch... branch moreSeleniumCode merged with master
