@@ -20,7 +20,7 @@ public class SeleniumTest {  				 //class declaration
 												// subclass of RemoteWebDriverClass.
 //		List<WebDriver> driver2 = new ArrayList<WebDriver>(); //not sure syntax is correct!!
 		FindElementByID cathy = new FindElementByID();
-		FindElementByTagName beth = new FindElementByTagName();
+//		FindElementByTagName beth = new FindElementByTagName(); //this doesn't fully work!!! like not at all. don't understand tags.
 //		MoreSeleniumTestClass stuff = new MoreSeleniumTestClass();
 		
 		cathy.openWebsite();
