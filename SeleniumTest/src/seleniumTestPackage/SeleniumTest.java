@@ -19,14 +19,16 @@ public class SeleniumTest {  				 //class declaration
 												// HtmlUnitDriver. Firefox driver is a 
 												// subclass of RemoteWebDriverClass.
 //		List<WebDriver> driver2 = new ArrayList<WebDriver>(); //not sure syntax is correct!!
-		FindElementByID cathy = new FindElementByID();  //instance of class FindElementByID
+//		FindElementByID cathy = new FindElementByID();  //instance of class FindElementByID
 		FindElementByClassName susan = new FindElementByClassName();
-//		FindElementByTagName beth = new FindElementByTagName(); //this doesn't fully work!!! like not at all. don't understand tags.
+		FindElementByTagName beth = new FindElementByTagName(); //this now works. better understanding of tags. there are mucho tags on a page
+		FindElementBylinkText carl = new FindElementBylinkText();
 //		MoreSeleniumTestClass stuff = new MoreSeleniumTestClass();
 		
-		cathy.findElementByID();
+//		cathy.findElementByID();
 //		beth.findByTagName(); //this doesn't work!!!!!!!!!!!!!!!!!!!!!!!!
 //		susan.findByClassName();
+		carl.findByLinkText();
 //		driver.get("http://www.duckduckgo.com");
 //		driver.navigate().to("http://www.yahoo.com");// <Webdriver Instance>.navigate().to("www. ... .com")
 //		samantha.get("http://www.google.com");
