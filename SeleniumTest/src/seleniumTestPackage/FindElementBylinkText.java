@@ -13,8 +13,8 @@ public class FindElementBylinkText extends MoreSeleniumTestClass	{
 	public void findByLinkText()	{
 		
 		WebDriver bill = new FirefoxDriver();
-		bill.get("http://www.yahoo.com");
-		WebElement aboutLink = bill.findElement(By.linkText("Mail"));
+		bill.get("http://www.google.com");
+		WebElement aboutLink = bill.findElement(By.linkText("Gmail"));
 		Sleep(5);
 		aboutLink.click();  // click() is an action method on aboutLink which is element "mail"
 		Sleep(5);
