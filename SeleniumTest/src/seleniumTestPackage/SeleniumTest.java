@@ -32,9 +32,9 @@ public class SeleniumTest {  				 //class declaration
 //		beth.findByTagName(); //this doesn't work!!!!!!!!!!!!!!!!!!!!!!!!
 //		susan.findByClassName();
 //		carl.findByLinkText();
-//		bill.findByPartialText();
+		bill.findByPartialText();
 //		larry.findByxpath();
-		manu.findBycssSelector();
+//		manu.findBycssSelector();
 //		driver.get("http://www.duckduckgo.com");
 //		driver.navigate().to("http://www.yahoo.com");// <Webdriver Instance>.navigate().to("www. ... .com")
 //		samantha.get("http://www.google.com");
