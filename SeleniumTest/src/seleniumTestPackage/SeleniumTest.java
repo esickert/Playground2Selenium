@@ -22,15 +22,19 @@ public class SeleniumTest {  				 //class declaration
 //		FindElementByID cathy = new FindElementByID();  //instance of class FindElementByID
 		FindElementByClassName susan = new FindElementByClassName();
 		FindElementByTagName beth = new FindElementByTagName(); //this now works. better understanding of tags. there are mucho tags on a page
-		FindElementBylinkText carl = new FindElementBylinkText();
+//		FindElementBylinkText carl = new FindElementBylinkText();
 		FindElementByPartialText bill = new FindElementByPartialText();
-//		MoreSeleniumTestClass stuff = new MoreSeleniumTestClass();
+		FindElementByxpath larry = new FindElementByxpath();
+		FindElementBycssSelector manu = new FindElementBycssSelector();
+		MoreSeleniumTestClass stuff = new MoreSeleniumTestClass();
 		
 //		cathy.findElementByID();
 //		beth.findByTagName(); //this doesn't work!!!!!!!!!!!!!!!!!!!!!!!!
 //		susan.findByClassName();
 //		carl.findByLinkText();
-		bill.findByPartialText();
+//		bill.findByPartialText();
+//		larry.findByxpath();
+		manu.findBycssSelector();
 //		driver.get("http://www.duckduckgo.com");
 //		driver.navigate().to("http://www.yahoo.com");// <Webdriver Instance>.navigate().to("www. ... .com")
 //		samantha.get("http://www.google.com");

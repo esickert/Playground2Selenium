@@ -25,9 +25,9 @@ public class FindElementByTagName extends MoreSeleniumTestClass	 {
 		System.out.println();
 		int i = 3;
 		System.out.println(searchBox.get(i) + " tag number " + i + " on the page.");
-		Sleep(5);
+		toSleep(5);
 //		searchBox.sendKeys("microsoft");
-		Sleep(5);
+		toSleep(5);
 //		searchBox.submit();
 //		Sleep(5);
 //		tracy.navigate().to("http://www.bing.com");

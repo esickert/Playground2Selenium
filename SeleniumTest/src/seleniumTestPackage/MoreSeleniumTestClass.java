@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver; // import necessary Webdriver classes
 
 public class MoreSeleniumTestClass	{
 	
-	public void Sleep(int num)	{
+	public void toSleep(int num)	{
 		for(int i = 1; i <= num; i++)	{
 			try {
 				Thread.sleep(1000);

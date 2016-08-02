@@ -11,11 +11,12 @@ public class FindElementByPartialText extends MoreSeleniumTestClass {
 		
 		WebDriver mary = new FirefoxDriver();
 		mary.get("http://www.yahoo.com");
-//		WebElement findElement = mary.findElement(By.partialLinkText("Ma")); //okay this worked for partial
-		WebElement findElement = mary.findElement(By.partialLinkText("Tumblr"));
-		Sleep(5);
+
+		WebElement findElement = mary.findElement(By.partialLinkText("Ma")); //okay this worked for partial
+//		WebElement findElement = mary.findElement(By.partialLinkText("Tum")); //okay this works also. tumblr is a link on Yahoo.
+		toSleep(5);
 		findElement.click();
-		Sleep(5);
+		toSleep(5);
 		mary.quit();
 		System.out.println("okay this works with whole text. now to find partial text");
 		
