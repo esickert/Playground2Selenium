@@ -14,7 +14,8 @@ public class FindElementByxpath	extends MoreSeleniumTestClass	{
 		kevin.get("http://www.google.com");
 		toSleep(5);
 		//the following will find the "mail" button in google page using xpath (xml)
-		WebElement mail = kevin.findElement(By.xpath(".//*[@id='gbw']/div/div/div[1]/div[2]/a"));//errored with 
+//		WebElement link = kevin.findElement(By.xpath(".//*[@id='gbw']/div/div/div[1]/div[2]/a"));//errored with 
+		WebElement mail = kevin.findElement(By.xpath("//*[@id='gbw']/div/div/div[1]/div[1]/a"));
 		//double quotes needed single quotes. This is firefox not chrome
 
 		toSleep(5);

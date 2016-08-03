@@ -12,7 +12,8 @@ public class FindElementBycssSelector extends MoreSeleniumTestClass		{
 	public void findBycssSelector() {
 	WebDriver steve = new FirefoxDriver();
 	steve.get("http://www.google.com");
-	toSleep(7);
+	toSleep(5);
+	WebElement link = steve.findElement(By.cssSelector("#a -> Gmail"));  //Use WebEleement!!!!!
 	steve.quit();
 	}
 
