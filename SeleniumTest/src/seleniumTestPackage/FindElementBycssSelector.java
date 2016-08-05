@@ -27,7 +27,7 @@ public class FindElementBycssSelector extends MoreSeleniumTestClass		{
 //	WebElement link = steve.findElement(By.linkText("About"));
 	toSleep(5);
 	link.click(); //once the link is found it needs to be clicked on.
-	System.out.println("Successfully open google privacy page via link");
+	System.out.println("Successfully open google privacy page via link using By.cssSelector");
 //	steve.quit();
 	}
 }
