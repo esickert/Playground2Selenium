@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;        // import necessary Webdriver class
 import org.openqa.selenium.WebElement;       // need to import WebElement class to use it...see below.
 //import org.openqa.selenium.Keys;
 
-public class SeleniumTest {  				 //class declaration
+public class SeleniumTest	{  				 //class declaration
 
 	public static void main(String[] args) { //start of the main method
 		// TODO Auto-generated method stub
@@ -19,7 +19,7 @@ public class SeleniumTest {  				 //class declaration
 												// HtmlUnitDriver. Firefox driver is a 
 												// subclass of RemoteWebDriverClass.
 //		List<WebDriver> driver2 = new ArrayList<WebDriver>(); //not sure syntax is correct!!
-//		FindElementByID cathy = new FindElementByID();  //instance of class FindElementByID
+		FindElementByID cathy = new FindElementByID();  //instance of class FindElementByID
 		FindElementByClassName susan = new FindElementByClassName();
 		FindElementByTagName beth = new FindElementByTagName(); //this now works. better understanding of tags. there are mucho tags on a page
 //		FindElementBylinkText carl = new FindElementBylinkText();
@@ -28,12 +28,13 @@ public class SeleniumTest {  				 //class declaration
 		FindElementBycssSelector manu = new FindElementBycssSelector();
 		MoreSeleniumTestClass stuff = new MoreSeleniumTestClass();
 		
-//		cathy.findElementByID();
+		cathy.findElementByID();
+
 //		beth.findByTagName(); //this doesn't work!!!!!!!!!!!!!!!!!!!!!!!!
 //		susan.findByClassName();
 //		carl.findByLinkText();
 //		bill.findByPartialText();
-		larry.findByxpath();  //this worked!!!
+//		larry.findByxpath();  //this worked!!!
 //		manu.findBycssSelector();
 //		manu.findBycssSelector();
 //		driver.get("http://www.duckduckgo.com");

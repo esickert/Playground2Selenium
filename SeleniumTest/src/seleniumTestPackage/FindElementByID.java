@@ -16,9 +16,9 @@ public class FindElementByID extends MoreSeleniumTestClass{
 		toSleep(5);
 		searchBox.submit();
 		toSleep(5);
-//		patricia.navigate().to("http://www.bing.com");
+		patricia.navigate().to("http://www.bing.com");
 		toSleep(5);
 		patricia.quit();
-		System.out.println("That's all folks!!! finding web element by id works");
+		System.out.println("Successfully used findElement(By.id()");
 	}
 }

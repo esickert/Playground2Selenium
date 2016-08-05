@@ -22,7 +22,7 @@ public class FindElementByxpath	extends MoreSeleniumTestClass	{
 		System.out.println("The button is " + mail.getText());
 		toSleep(5);
 		mail.click();
-		System.out.println("Successfully opened by By.xpath");
+		System.out.println(dateTime() + "Successfully opened by By.xpath");
 		toSleep(5);
 		kevin.quit();
 		System.out.println("Okay this worked with xpath."); 

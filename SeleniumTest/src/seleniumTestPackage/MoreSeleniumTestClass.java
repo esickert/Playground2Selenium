@@ -4,6 +4,8 @@ import org.openqa.selenium.firefox.*; // import necessary Webdriver classes
 import org.openqa.selenium.*;
 import org.openqa.selenium.WebDriver; // import necessary Webdriver classes
 
+import java.util.*;
+
 public class MoreSeleniumTestClass	{
 	
 	public void toSleep(int num)	{
@@ -28,6 +30,11 @@ public class MoreSeleniumTestClass	{
 		Dimension size = new Dimension(900,600);	
 		stuff.manage().window().setSize(size);
 		System.out.println("Resized window");
+	}
+	
+	public Date dateTime()	{
+		Date date = new Date();
+		return date;
 	}
 }			
 
