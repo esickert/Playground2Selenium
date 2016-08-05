@@ -19,6 +19,6 @@ public class FindElementByID extends MoreSeleniumTestClass{
 		patricia.navigate().to("http://www.bing.com");
 		toSleep(5);
 		patricia.quit();
-		System.out.println("Successfully used findElement(By.id()");
+		System.out.println(dateTime() + " Successfully used findElement(By.id())");
 	}
 }
