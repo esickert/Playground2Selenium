@@ -11,16 +11,16 @@ public class FindElementByClassName extends MoreSeleniumTestClass {
 		WebDriver tracy = new FirefoxDriver();
 		tracy.get("http://www.bing.com");
 		toSleep(5);
-		WebElement searchBox = tracy.findElement(By.className("b_searchbox")); //this checks by class (className).
+		WebElement searchBox = tracy.findElement(By.className("b_searchbox")); //this checks by class (className) for search in bing
 //		WebElement searchBox = tracy.findElement(By.name("q")); //this is a test to check by name!!
 		toSleep(5);
 		searchBox.sendKeys("microsoft");
 		toSleep(5);
-//		searchBox.submit();
+		searchBox.submit();
 //		Sleep(5);
 //		tracy.navigate().to("http://www.yahoo.com");
 		toSleep(5);
 		tracy.quit();
-		System.out.println("okay...finding web element by class (className) works!!!");
+		System.out.println(dateTime() + " Successfully found web element via By.className() in Bing");
 	}
 }

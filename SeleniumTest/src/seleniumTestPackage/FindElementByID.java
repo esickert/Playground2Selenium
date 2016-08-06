@@ -20,5 +20,6 @@ public class FindElementByID extends MoreSeleniumTestClass{
 		toSleep(5);
 		patricia.quit();
 		System.out.println(dateTime() + " Successfully used findElement(By.id())");
+		toSleep(5);
 	}
 }

@@ -22,18 +22,18 @@ public class SeleniumTest	{  				 //class declaration
 		FindElementByID cathy = new FindElementByID();  //instance of class FindElementByID
 		FindElementByClassName susan = new FindElementByClassName();
 		FindElementByTagName beth = new FindElementByTagName(); //this now works. better understanding of tags. there are mucho tags on a page
-//		FindElementBylinkText carl = new FindElementBylinkText();
+		FindElementBylinkText carl = new FindElementBylinkText();
 		FindElementByPartialText bill = new FindElementByPartialText();
 		FindElementByxpath larry = new FindElementByxpath();
 		FindElementBycssSelector manu = new FindElementBycssSelector();
 		MoreSeleniumTestClass stuff = new MoreSeleniumTestClass();
 		
-		cathy.findElementByID();
+		cathy.findElementByID(); //FIND ELEMENT BY ID
+		beth.findByTagName(); //this works but i don't fully grasp it!!. FIND ELEMENT BY TAG NAME, we can refine search via style?? i think.
+		susan.findByClassName(); // FIND ELEMENT BY CLASSNAME
+		carl.findByLinkText(); //FIND ELEMENT BY TEXT  
+		bill.findByPartialText();
 
-//		beth.findByTagName(); //this doesn't work!!!!!!!!!!!!!!!!!!!!!!!!
-//		susan.findByClassName();
-//		carl.findByLinkText();
-//		bill.findByPartialText();
 //		larry.findByxpath();  //this worked!!!
 //		manu.findBycssSelector();
 //		manu.findBycssSelector();
@@ -76,6 +76,7 @@ public class SeleniumTest	{  				 //class declaration
 //		stuff.Sleep(5);
 		
 //		samantha.quit();
+		System.out.println("That's all folks");
 
 	}
 

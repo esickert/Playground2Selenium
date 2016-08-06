@@ -16,9 +16,9 @@ public class FindElementByPartialText extends MoreSeleniumTestClass {
     	WebElement findElement = mary.findElement(By.partialLinkText("Tum")); //okay this works also. tumblr is a link on Yahoo.
 		toSleep(5);
 		findElement.click();
-		toSleep(5);
+		toSleep(10);
 		mary.quit();
-		System.out.println("okay this works with whole text. now to find partial text");
+		System.out.println(dateTime() + " Successfully located webElement 'tumblr' by partialLinkText()");
 		
 	}
 }
