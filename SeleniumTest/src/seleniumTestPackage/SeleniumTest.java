@@ -33,10 +33,9 @@ public class SeleniumTest	{  				 //class declaration
 		susan.findByClassName(); // FIND ELEMENT BY CLASSNAME
 		carl.findByLinkText(); //FIND ELEMENT BY TEXT  
 		bill.findByPartialText();
-
-//		larry.findByxpath();  //this worked!!!
-//		manu.findBycssSelector();
-//		manu.findBycssSelector();
+		larry.findByxpath();  //this worked!!!
+		manu.findBycssSelector();
+		
 //		driver.get("http://www.duckduckgo.com");
 //		driver.navigate().to("http://www.yahoo.com");// <Webdriver Instance>.navigate().to("www. ... .com")
 //		samantha.get("http://www.google.com");

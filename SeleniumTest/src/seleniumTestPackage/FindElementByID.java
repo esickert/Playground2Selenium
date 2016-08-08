@@ -8,18 +8,23 @@ import org.openqa.selenium.WebDriver;
 public class FindElementByID extends MoreSeleniumTestClass{
 	
 	public void findElementByID()	{
+		
+		int num = 3;
+		
 		WebDriver patricia = new FirefoxDriver();
 		patricia.get("http://www.yahoo.com");
+		System.out.println(dateTime() + " Successfully opened Yahoo");
 		WebElement searchBox = patricia.findElement(By.id("uh-search-box")); //By.id method to find Google search box
-		toSleep(5);
+		toSleep(num);
 		searchBox.sendKeys("comcast");
-		toSleep(5);
+		toSleep(num);
 		searchBox.submit();
-		toSleep(5);
+		toSleep(num);
 		patricia.navigate().to("http://www.bing.com");
-		toSleep(5);
+		System.out.println(dateTime() + " Successfully opened Bing");
+		toSleep(num);
 		patricia.quit();
 		System.out.println(dateTime() + " Successfully used findElement(By.id())");
-		toSleep(5);
+		toSleep(num);
 	}
 }

@@ -15,6 +15,9 @@ public class FindElementByTagName extends MoreSeleniumTestClass	 {
 	 */
 	
 	public void findByTagName()	{
+		
+		int num = 3;
+		
 		WebDriver tracy = new FirefoxDriver();
 		tracy.get("http://www.google.com");
 //		WebElement searchBox = tracy.findElement(By.tagName("input"));
@@ -27,17 +30,17 @@ public class FindElementByTagName extends MoreSeleniumTestClass	 {
 		System.out.println();
 		
 		System.out.println(searchBox.get(3) + " tag number " + 3 + " on the page.");
-		toSleep(5);
+		toSleep(num);
 
 //		searchBox.sendKeys("microsoft"); //searchBox is a List of WebElements!!!!!
-		toSleep(5);
+		toSleep(num);
 //		searchBox.submit();  //searchBox is a List of WebElements
-		toSleep(5);
+		toSleep(num);
 		tracy.navigate().to("http://www.bing.com");  //using navigate() instead of get()
-		toSleep(5);
+		toSleep(num);
 		tracy.quit();
 		System.out.println(dateTime() + " Successfully used findElement(By.tagName())");
 		System.out.println("tags define the html line. HTML tags describe different document content");
-		toSleep(5);
+		toSleep(num);
 	}
 }

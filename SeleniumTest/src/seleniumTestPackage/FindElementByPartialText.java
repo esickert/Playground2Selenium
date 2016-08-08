@@ -9,16 +9,19 @@ public class FindElementByPartialText extends MoreSeleniumTestClass {
 	
 	public void findByPartialText()	{
 		
+		int num = 3;
+		
 		WebDriver mary = new FirefoxDriver();
 		mary.get("http://www.yahoo.com");
+		System.out.println("Successfully opened Yahoo");
 
 //		WebElement findElement = mary.findElement(By.partialLinkText("Ma")); //okay this worked for partial
     	WebElement findElement = mary.findElement(By.partialLinkText("Tum")); //okay this works also. tumblr is a link on Yahoo.
-		toSleep(5);
+		toSleep(num);
 		findElement.click();
-		toSleep(10);
+		toSleep(num);
 		mary.quit();
-		System.out.println(dateTime() + " Successfully located webElement 'tumblr' by partialLinkText()");
+		System.out.println(dateTime() + " Successfully located webElement 'tumblr' by partialLinkText() in yahoo");
 		
 	}
 }
