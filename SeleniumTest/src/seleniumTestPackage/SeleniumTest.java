@@ -29,7 +29,7 @@ public class SeleniumTest	{  				 //class declaration
 		
 		cathy.findElementByID(); //FIND ELEMENT BY ID  //**************************BROKEN
 //		beth.findByTagName(); //this works but i don't fully grasp it!!. FIND ELEMENT BY TAG NAME, we can refine search via style?? i think.
-		susan.findByClassName(); // FIND ELEMENT BY CLASSNAME  //*******************************BROKEN
+//		susan.findByClassName(); // FIND ELEMENT BY CLASSNAME  //*******************************BROKEN
 //		carl.findByLinkText(); //FIND ELEMENT BY TEXT  
 //		bill.findByPartialText();
 //		larry.findByxpath();  //this worked!!!
