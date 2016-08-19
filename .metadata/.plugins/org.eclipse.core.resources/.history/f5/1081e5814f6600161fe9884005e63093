@@ -13,6 +13,7 @@ public class SeleniumTest	{  				 //class declaration
 	public static void main(String[] args) { //start of the main method
 		// TODO Auto-generated method stub
 		
+		System.out.println("THIS STILL NEEDS TO BE FIXED FOR ECLIPSE- SEE STAGING");
 		WebDriver samantha = new FirefoxDriver(); // implementation is done 
 												// in 2 classes: RemoteWebDriver and 
 												// HtmlUnitDriver. Firefox driver is a 
